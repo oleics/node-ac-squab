@@ -1,0 +1,36 @@
+
+<form method="GET">
+  <input name="token" value="{{token}}">
+  <input type="submit" value="Set token">
+</form>
+
+{% if token is not empty and data is not empty %}
+  <h3>Your current token</h3>
+  <input readonly value="{{token}}">
+  <pre>{{dump(data)}}</pre>
+  <div><a href="/_login">show</a></div>
+  <div><a href="/">index</a></div>
+{% endif %}
+
+{% if newToken is not empty %}
+  <h3>New token</h3>
+  <input readonly value="{{newToken}}">
+  <pre>{{dump(newData)}}</pre>
+  <div><a href="/_token/{{newToken}}">set</a></div>
+{% endif %}
+
+{% if data.roles is defined and 'admin' in data.roles %}
+  <h3>Create a new token</h3>
+  <form method="POST">
+    <input type="text" name="username">
+    <input type="submit" value="Create and set a new token">
+  </form>
+{% endif %}
+
+{% if data is empty %}
+  <h3>Need a token?</h3>
+  <form method="GET">
+    <input type="text" name="tokenrequest">
+    <input type="submit" value="Request a token">
+  </form>
+{% endif %}

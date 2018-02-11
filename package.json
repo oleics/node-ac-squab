@@ -1,0 +1,22 @@
+{
+  "name": "ac-squab",
+  "version": "0.0.0",
+  "author": "Oliver Leics <oliver.leics@gmail.com>",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "got": "^8.0.3",
+    "jsonwebtoken": "^8.1.1",
+    "pg": "^7.4.1",
+    "pg-format": "^1.0.4",
+    "qs": "^6.5.1",
+    "sequelize": "^4.33.2",
+    "sqlite3": "^3.1.13",
+    "twig": "^1.10.5"
+  }
+}
