@@ -1,7 +1,10 @@
 {
   "name": "ac-squab",
+  "description": "",
   "version": "0.0.0",
   "author": "Oliver Leics <oliver.leics@gmail.com>",
+  "license": "MIT",
+  "repository": "oleics/node-ac-squab",
   "engines": {
     "node": ">=8"
   },
