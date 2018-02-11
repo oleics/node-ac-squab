@@ -2,6 +2,8 @@
 ac-squab
 ========
 
+A cushion for a chair or couch.
+
 MIT License
 -----------
 
