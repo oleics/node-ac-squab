@@ -10,7 +10,7 @@
   },
   "main": "./client.js",
   "bin": {
-    "ac-squab-server": "./server.js"
+    "ac-squab-server": "./bin/server"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
