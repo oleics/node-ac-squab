@@ -8,6 +8,10 @@
   "engines": {
     "node": ">=8"
   },
+  "main": "./client.js",
+  "bin": {
+    "ac-squab-server": "./server.js"
+  },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
