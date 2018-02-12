@@ -1,7 +1,7 @@
 {
   "name": "ac-squab",
   "description": "A cushion for a chair or couch.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Oliver Leics <oliver.leics@gmail.com>",
   "license": "MIT",
   "repository": "oleics/node-ac-squab",
