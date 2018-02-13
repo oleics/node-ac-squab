@@ -3,8 +3,14 @@ module.exports = routes;
 
 function routes() {
   var routes = [
-    
+
     // security
+    {
+      middleware: './lib/middlewares/defaults.js',
+    },
+    {
+      middleware: './lib/middlewares/force-ssl.js',
+    },
     {
       path: '/maintenance',
       middleware: './lib/middlewares/maintenance.js',

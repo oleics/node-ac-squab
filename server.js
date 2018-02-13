@@ -1,6 +1,7 @@
 
 var config = {
-  PORT: process.env.PORT || 3000,
+  PORT: process.env.PORT || 3001,
+  disableForceSsl: process.env.NODE_ENV !== 'production',
   db: {
     connectionString: process.env.DATABASE_URL || 'postgresql://'+process.env.USER+':'+process.env.USER+'@localhost:5432/'+process.env.USER+'',
     sequelizeOptions: {
